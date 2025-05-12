@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Commande TV</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section>
+    <h1>Commander Les TVs</h1>
+    <label for="select">TVs</label><br />
+    <select id="select" required>
+      <option value="">---- Choisissez une TV ----</option>
+    </select><br><br>
+
+    <label for="number">Quantité</label><br />
+    <input type="number" id="number" required /><br><br>
+
+    <button onclick="ajouterAuPanier()">Ajouter au panier</button><br><br>
+
+    <h1>Panier de commandes</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>REFERENCE</th>
+          <th>QUANTITE</th>
+          <th>IMAGE</th>
+          <th>ACTION</th>
+        </tr>
+      </thead>
+      <tbody id="panierBody"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total HT</td>
+          <td colspan="2" id="totalHT">0 DHs</td>
+        </tr>
+        <tr>
+          <td colspan="2">Total TTC</td>
+          <td colspan="2" id="totalTTC">0 DHs</td>
+        </tr>
+      </tfoot>
+    </table><br><br>
+
+    <button>Commander</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
