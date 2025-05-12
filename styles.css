@@ -83,6 +83,65 @@ tfoot td {
     height: 50px;
     object-fit: cover;
 }
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    section {
+        padding: 30px;
+        width: 100%;
+    }
+
+    input[type='number'],
+    select {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+        overflow-x: auto;
+        display: block;
+    }
+
+    .table img {
+        width: 40px;
+        height: 40px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type='number'],
+    select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
 
 
 
